@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+html {font-size: 10px;}
+body {font-size: 1.4rem;}
+
+.inner {width: 100%}
+header nav .btn-close {
+    position: absolute;
+    top: 20px; right: 20px;
+    font-size: 2.8rem;
+    color: #2b2b2b;
+    z-index: 100;
+    display: block;
+}
+header .top-nav {
+    position: absolute;
+    top: 3%; right: 4%;
+}
+header .top-nav .btn-mobile {
+    display: block;
+}
+header .top-nav > a {
+    font-size: 20px;
+    font-weight: 300;
+    color: #767474;
+}
+/*header*/
+header h1 img {
+    width: 150px;
+    height: auto;
+    margin-top: 30px;
+}
+header nav {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background: #fff;
+}
+header nav.on {right: 0;}
+header nav ul {
+    margin-top: 180px;
+}
+header nav ul li {
+    float: none;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+header nav ul li a {
+    position: relative;
+    line-height: 28px;
+}
+header nav ul li a:hover {
+    color: #cc5252;
+}
+header nav ul li a.active:after,
+header nav ul li a:after {
+    content: none;
+}
+header nav ul li a:hover:after {
+    width: 0;
+}
+
+/*main-visual*/
+.main-visual {
+    width: 100%;
+}
+
+/*main-title*/
+.main-title {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background: #fff;
+}
+.main-title .main-title-inner {
+    position: relative; 
+    width: 100%;
+}
+.main-title .title-text {
+    width: 100%;
+    padding: 20px 30px;
+    text-align: left;
+    word-break: keep-all;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+.main-title .title-text h2 {
+    font-size: 20px;
+    line-height: 1.4;
+}
+.main-title .title-text h2:after {
+    content: '';
+    position: absolute;
+    top: 34%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    border: 1px solid #cc5252;
+}
+.main-title .title-text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #2b2b2b;
+    line-height: 1.6;
+    margin-bottom: 30px;   
+}
+.main-title .title-img figure img {
+    position: absolute;
+    top: 105%;
+    left: 8%;
+    width: 80%;
+    height: 40vh;
+    border-left: 4px solid #cc5252;
+}
+
+/*amenities*/
+.amenities {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    padding: 80px 20px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+.amenities:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(0,0,0,0.01);
+}
+.amenities h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+.amenities img {
+    width: 90vw;
+    height: 280px;
+
+}
+.amenities .amenities-text {
+    font-family: 'Lato', sans-serif;
+    color: #2b2b2b;
+    line-height: 1.4;  
+}
+.amenities .amenities-text h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.amenities .amenities-text p {
+    font-size: 15px;
+    color: #585858;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+.amenities .amenities-text ul {
+    width: 100%;
+    padding: 0 22px;
+    box-sizing: border-box;
+}
+.amenities .amenities-text ul li {
+    list-style: disc;
+}
+
+.amenities .amenities-text span {
+    font-style: italic;
+    font-weight: 600;
+}
+.amenities .amenities-left {
+    width: 100%;
+}
+.amenities .amenities-right {
+    position: absolute;
+    top: 58%;
+    left: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*interiors*/
+.interiors {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+.interiors .interiors-text {
+    background-color: #f7f7f7;
+    height: 73vh;
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+    box-sizing: border-box;
+}
+.interiors .interiors-text:after {
+    content: '';
+    position: absolute;
+    top: 73%;
+    right: 0;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+}
+.interiors .interiors-text h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.interiors .interiors-text h3:before {
+    content: '';
+    position: absolute;
+    top: 11%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    display: block;
+    border: 1px solid #cc5252;
+}
+.interiors .interiors-text p {
+    font-size: 15px; 
+}
+
+/*add-text*/
+.add-text {
+    position: relative;
+    height: 60vh;
+    text-align: center;
+}
+.add-text p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.add-text a {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #cc5252;
+    letter-spacing: 3px;
+    border: 2px solid #cc5252;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+.add-text a:hover {
+    top: 75%;
+    background-color: #cc5252;
+    color: #fff;
+}
+
+/*footer*/
+footer {
+    height: 65vh;
+}
+footer .footer-text p {
+    position: absolute;
+    top: 75%;
+    left: 18%;
+}
+footer .footer-text ul {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    padding: 80px 0px 80px;
+}
+footer .footer-text ul:after {
+    top: 82%;
+}
+footer .footer-text ul li{
+    float: none;
+    padding: 20px 0px;
+}
+footer .footer-text ul li:last-child:after {
+    content: none;
+}
+footer .footer-text ul li:first-child:after {
+    content: none;
+}
+footer .footer-text ul li:nth-child(1),
+footer .footer-text ul li:nth-child(3) {
+    margin-top: 10px
+}
+footer .footer-text ul li:nth-child(3) {
+    margin-right: 40px;
+}
+footer .footer-text ul:before, footer .footer-text ul:after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/*공통*/
+html {font-size: 10px;}
+body {font-size: 1.4rem;}
+.inner {width: 100%}
+header nav .btn-close {
+    position: absolute;
+    top: 20px; right: 20px;
+    font-size: 2.8rem;
+    color: #2b2b2b;
+    z-index: 100;
+    display: block;
+}
+header .top-nav {
+    position: absolute;
+    top: 3%; right: 4%;
+}
+header .top-nav .btn-mobile {
+    display: block;
+}
+header .top-nav > a {
+    font-size: 20px;
+    font-weight: 300;
+    color: #767474;
+}
+
+/*header*/
+header h1 img {
+    width: 150px;
+    height: auto;
+    margin-top: 30px;
+}
+header nav {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background: #fff;
+}
+header nav.on {right: 0;}
+header nav ul {
+    margin-top: 180px;
+}
+header nav ul li {
+    float: none;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+header nav ul li a {
+    position: relative;
+    line-height: 28px;
+}
+header nav ul li a:hover {
+    color: #cc5252;
+}
+header nav ul li a.active:after,
+header nav ul li a:after {
+    content: none;
+}
+header nav ul li a:hover:after {
+    width: 0;
+}
+
+/*main-visual*/
+.main-visual {
+    width: 100%;
+}
+.main-visual p {
+    font-size: 28px;  
+}
+
+/*main-visual-text*/
+.main-visual-text {
+    width: 85vw;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.main-visual-text:before {
+    top: 105%;
+}
+
+/*container*/
+.container ul li {
+    float: none;
+    width: 87%;
+    height: 60vh;
+}
+.container ul li strong {
+    margin-top: 130px;
+}
+.container ul li span {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.container ul li a {
+    border: 2px solid #fff;
+    padding: 10px 22px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/*add-text*/
+.add-text {
+    width: 100%;
+}
+.add-text p {
+    padding: 20px 50px;
+}
+.add-text span {
+    padding-left: 50px;
+}
+
+/*footer*/
+footer {
+    height: 65vh;
+}
+footer .footer-text p {
+    position: absolute;
+    top: 75%;
+    left: 18%;
+}
+footer .footer-text ul {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    padding: 80px 0px 80px;
+}
+footer .footer-text ul:after {
+    top: 82%;
+}
+footer .footer-text ul li{
+    float: none;
+    padding: 20px 0px;
+}
+footer .footer-text ul li:last-child:after {
+    content: none;
+}
+footer .footer-text ul li:first-child:after {
+    content: none;
+}
+footer .footer-text ul li:nth-child(1),
+footer .footer-text ul li:nth-child(3) {
+    margin-top: 10px
+}
+footer .footer-text ul li:nth-child(3) {
+    margin-right: 40px;
+}
+footer .footer-text ul:before, footer .footer-text ul:after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

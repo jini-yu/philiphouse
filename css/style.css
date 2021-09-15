@@ -1,0 +1,410 @@
+@charset 'utf-8';
+@import url(fonts.css);
+@import url(reset.css);
+
+
+/*공통*/
+body {font: 15px 'Source Serif Pro', serif; color: #2b2b2b;}
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+}
+.btn-close {
+    display: none;
+}
+.top-nav .btn-mobile {
+    display: none;
+}
+/*header*/
+header h1 img {
+    width: 200px;
+    height: auto;
+    margin-top: 35px;
+}
+header nav {
+    position: absolute;
+    top: 4%;
+    right: 20%;
+}
+header nav ul li {
+    float: left;
+/*    margin-right: 50px;*/
+    text-align: center;
+    font-weight: 600;
+    color: #111;
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+/*    height: 20px;*/
+}
+header nav ul li a {
+    position: relative;
+    line-height: 28px;
+}
+header nav ul li a.active:after,
+header nav ul li a:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 20px;
+    height: 2px;
+    background-color: #cc5252;
+}
+header nav ul li a:after {
+    width: 0px;
+    transition: width 0.4s ease;
+}
+header nav ul li a:hover:after {
+    width: 20px;
+}
+
+/*main-visual*/
+.main-visual {
+    height: 60vh;
+    background: url('../img/0102.jpg') no-repeat;
+    background-size: 1180px;
+    background-position: right;
+    margin-top: 30px;
+}
+.main-visual .main-text {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 680px;
+    height: 280px;
+    padding: 50px 50px 30px 0px;
+    background-color: #fff;
+    border-right: 2px solid #cc5252;
+}
+.main-visual .main-text p {
+    width: 620px;
+    font: 20px 'Lato', sans-serif; color: #333;
+    line-height: 1.6;
+}
+.main-visual .main-text h2 {
+    font-size: 44px;
+    color: #111;
+    margin-bottom: 40px;
+}
+.main-visual .main-text h2:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #cc5252;
+}
+
+/*sub-text*/
+.sub-text {
+    padding: 120px 50px;
+    position: relative;
+}
+.sub-text .left-text {
+    float: left;
+    width: 300px;
+    padding: 0 50px;
+    font-family: 'Lato', sans-serif;
+}
+.sub-text .left-text p {
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #2e3d4d;
+    line-height: 1.6;
+    font-weight: 600;
+}
+.sub-text .left-text li {
+    margin-bottom: 20px;
+}
+.sub-text .left-text li i {
+    color: #cc5252;
+    margin-right: 10px;
+}
+.sub-text .right-text {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 550px;
+}
+.sub-text .right-text:after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -30%;
+    width: 1px;
+    height: 150px;
+    background-color: #2b2b2b;
+}
+.sub-text .right-text h2 {
+    font-size: 28px;
+    color: #2e3d4d;
+    margin-bottom: 20px;
+}
+.sub-text .right-text span {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+
+/*sub-visual*/
+.sub-visual {
+    position: relative;
+    height: 60vh;
+    background: url(../img/Philip-House-penthouse.jpg) no-repeat center/cover;
+    margin-bottom: 100px;
+}
+.sub-visual .visual-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 740px;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 2px solid #cc5252;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+.sub-visual .visual-text h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: #2e3d4d;
+}
+.sub-visual .visual-text h3:after {
+    content: '';
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    border: 1px solid #cc5252;
+}
+.sub-visual .visual-text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin-bottom: 50px;
+    word-wrap: break-word;
+}
+.sub-visual .visual-text a {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #cc5252;
+    letter-spacing: 3px;
+    border: 2px solid #cc5252;
+    padding: 15px 40px;
+    transition: all 0.4s;
+}
+.sub-visual .visual-text a:hover {
+    background-color: #cc5252;
+    color: #fff;
+}
+
+/*street*/
+.street {
+    position: relative;
+    text-align: center;
+}
+.street h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2e3d4d;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.street h3:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #cc5252;
+    width: 20px;
+}
+.street .street-text {
+    position: relative;
+    height: 500px;
+    margin-bottom: 80px;
+}
+.street .street-text span {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 22px;
+    color: #fff;
+}
+.street .street-text a {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.street .street-text a:hover {
+    background-color: #fff;
+    color: #cc5252;
+}
+.street-item {
+    position: absolute;
+    background-blend-mode: multiply;
+    height: 400px;
+    width: 920px;
+    margin-top: 60px;
+}
+.street-item.street-left {
+    left: 1%;
+    background: url(../img/street.jpg) no-repeat center/cover, rgba(0,0,0,0.5);
+}
+.street-item.street-right {
+    right: 1%;
+    background: url(../img/Living-Room-1.jpg) no-repeat center/cover, rgba(0,0,0,0.5);
+}
+
+/*contact*/
+.contact {
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+.contact h3 {
+    font-size: 25px;
+    color: #2e3d4d; 
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.contact h3:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #cc5252;
+    width: 20px;
+}
+.contact p {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+.contact a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    border: 2px solid #cc5252;
+    padding: 15px 50px;
+    color: #cc5252;
+    letter-spacing: 3px;
+}
+.contact a:hover {
+    background: #cc5252;
+    color: #fff;
+}
+
+/*footer*/
+footer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    background-color: #FAFBFC;
+}
+footer .footer-text p {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    font-size: 12px;
+    font-weight: 600;
+}
+footer .footer-text ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px 20px 80px;
+}
+footer .footer-text ul:before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: -12%;
+    border: 1px solid #5c7a99;
+    width: 1200px;
+}
+footer .footer-text ul:after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: -12%;
+    border: 0.03px solid #5c7a99;
+    width: 1200px;
+}
+footer .footer-text ul li{
+    float: left;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 15px 60px;
+    text-align: center;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+
+footer .footer-text ul li:first-child {
+    color: #5c7a99;
+}
+footer .footer-text ul li:last-child:after {
+    content: '';
+    position: absolute;
+    top: 53%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    border-right: 1px solid #5c7a99;
+    height: 40px;
+}
+footer .footer-text ul li:first-child:after {
+    content: '';
+    position: absolute;
+    top: 53%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    border-right: 1px solid #5c7a99;
+    height: 40px;
+}
+footer .footer-text ul li:first-child:hover {
+    color: #2b2b2b;
+}
+footer .footer-text ul li:nth-child(1),
+footer .footer-text ul li:nth-child(3) {
+    margin-top: 10px
+}
+footer .footer-text ul li:nth-child(3) {
+    margin-right: 0;
+}
+footer .footer-text ul li:nth-child(3) a:hover {
+    font-weight: bold;
+    color: #5c7a99;
+}
+footer .footer-text ul li a {
+    margin-right: 15px;
+}
+
+
+
+
+
+
